@@ -1,19 +1,22 @@
 {
   "name": "university-list",
-  "version": "1.0.11",
+  "version": "2.0.0",
   "description": "",
-  "main": "build/index.js",
+  "type": "module",
+  "exports": "./dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc --project tsconfig.dev.json",
-    "prepublish": "tsc"
+    "build": "tsup",
+    "prepublish": "tsup"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^20.11.28",
-    "tlds2": "^2.2.13",
+    "@types/node": "^25.0.2",
+    "tlds2": "^2.2.19",
+    "tsup": "^8.5.1",
+    "tsx": "^4.21.0",
     "typescript": "^5.9.3"
   }
 }

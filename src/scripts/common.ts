@@ -3,14 +3,14 @@ import path from 'path'
 import type { RawUniversity, University } from '../types'
 
 
-export const rawListPath = path.resolve(__dirname, '../../university-domains-list/world_universities_and_domains.json')
+export const rawListPath = path.resolve(import.meta.dirname, '../../university-domains-list/world_universities_and_domains.json')
 
 export async function loadRawList() {
   return JSON.parse((await readFile(rawListPath)).toString()) as
     RawUniversity[]
 }
 
-export const listPath = path.resolve(__dirname, '../../src/list.json')
+export const listPath = path.resolve(import.meta.dirname, '../../src/list.json')
 
 export async function saveList(list: University[]) {
   return writeFile(listPath, JSON.stringify(list, null, 2))

@@ -1,4 +1,4 @@
-import universities from './list.json'
+import universities from './list.json' with { type: 'json' }
 import { University } from './types'
 
 
