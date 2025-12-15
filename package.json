@@ -1,5 +1,5 @@
 {
-  "name": "university-list",
+  "name": "@gitroll-dev/university-list",
   "version": "2.0.0",
   "description": "",
   "type": "module",
@@ -13,10 +13,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@changesets/changelog-github": "^0.5.2",
+    "@changesets/cli": "^2.29.8",
     "@types/node": "^25.0.2",
     "tlds2": "^2.2.19",
     "tsup": "^8.5.1",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3"
-  }
+  },
+  "packageManager": "pnpm@10.25.0"
 }
